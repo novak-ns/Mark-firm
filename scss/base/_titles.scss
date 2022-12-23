@@ -1,0 +1,44 @@
+.main-title {
+  font-size: 77px;
+  font-family: $font-fourth;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: $third-color;
+  white-space: nowrap;
+}
+
+.main-title-p {
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: $font-fourth;
+  color: $third-color;
+}
+
+.section-title {
+  font-size: 43px;
+  font-family: $font-fourth;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-weight: 300;
+}
+.section-title::after {
+  content: '';
+  margin-top: 20px;
+  width: 50px;
+  height: 4px;
+  background: $primary-color;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-heading {
+  font-size: 20px;
+  font-family: $font-fourth;
+  color: $third-color;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}

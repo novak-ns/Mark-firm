@@ -1,0 +1,85 @@
+.hero {
+  width: 100%;
+  height: 800px;
+  position: relative;
+  .hero-slider {
+    width: 100%;
+    .hero-slider-img {
+      height: 800px;
+      width: 100%;
+      position: relative;
+      img {
+        position: absolute;
+        object-fit: cover;
+        object-position: center center;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .progressBarContainer {
+    div {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 0;
+      float: left;
+      span.progressBar {
+        width: 100%;
+        height: 7px;
+        .inProgress {
+          background-color: rgb(77, 77, 77);
+          width: 0%;
+          height: 7px;
+        }
+      }
+    }
+  }
+  
+  .hero-content {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    a {
+      background-color: transparent;
+      color: $third-color;
+      font-size: 12px;
+      font-family: $font-fourth;
+    }
+    a:hover {
+      background-color: rgb(255, 255, 255, .2);
+      color: $third-color;
+    }
+  }
+}
+
+.slick-dots {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 30px;
+  list-style: none;
+  cursor: pointer;
+  button {
+    display: none;
+  }
+}
+.slick-dots li {
+  margin-bottom: 5px;
+  background: transparent;
+  border-radius: 50%;
+  display: block;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  border: 1px solid $third-color;
+  transition: $transition-ease;
+}
+
+.slick-dots li.slick-active {
+  background-color: $third-color;
+  transition: $transition-ease;
+}

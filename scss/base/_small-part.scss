@@ -1,0 +1,26 @@
+.small-part {
+  background: $primary-color;
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    h3 {
+      font-size: 35px;
+      color: $third-color;
+      text-align: center;
+      font-family: $font-fourth;
+      font-weight: 300;
+    }
+    .main-button {
+      color: $third-color;
+      padding: 20px 25px;
+      height: fit-content;
+      text-align: center;
+      white-space: nowrap;
+    }
+    .main-button:hover {
+      color: $primary-color;
+    }
+  }
+}

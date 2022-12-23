@@ -1,0 +1,17 @@
+.main-button {
+  border: 1px solid $third-color;
+  border-radius: 5px;
+  background-color: $primary-color;
+  transition: $transition-ease;
+  color: $third-color;
+  padding: 12px 22px;
+  font-size: 16px;
+  font-family: $font-second;
+  font-weight: 700;
+  transition: $transition-ease;
+}
+
+.main-button:hover {
+  background-color: $third-color;
+  color: $primary-color;
+}

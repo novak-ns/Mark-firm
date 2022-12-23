@@ -1,0 +1,70 @@
+$font-main: 'PT Serif', serif;
+$font-second: 'Poppins', sans-serif;
+$font-third: 'IM Fell Double Pica', serif;
+$font-fourth: 'EB Garamond', serif;
+$font-fifth: 'Roboto Serif', serif;
+
+$primary-color: #9b7b30;
+$secondary-color: #1e1e1e;
+$third-color: white;
+$fourth-color: #898989;
+
+// Breakpoints
+$mac: 1440px;
+$lg: 1199px;
+$md: 991px;
+$sm: 767px;
+$mb: 555px;
+$ip: 420px;
+$xs: 350px;
+
+@mixin big-1870 {
+  @media screen and (max-width: 1870px) {
+      @content;
+  }
+}
+
+@mixin mac-1440 {
+  @media screen and (max-width: 1440px) {
+      @content;
+  }
+}
+
+@mixin lg-1199 {
+  @media screen and (max-width: 1199px) {
+      @content;
+  }
+}
+
+@mixin md-991 {
+  @media screen and (max-width: 991px) {
+      @content;
+  }
+}
+
+@mixin sm-767 {
+  @media screen and (max-width: 767px) {
+      @content;
+  }
+}
+
+@mixin mb-555 {
+  @media screen and (max-width: 555px) {
+      @content;
+  }
+}
+
+@mixin xs-350 {
+  @media screen and (max-width: 350px) {
+      @content;
+  }
+}
+
+$dur: 350ms;
+$ease: ease;
+
+@mixin transition-ease {
+    transition:all 400ml ease-in-out;
+}
+
+$transition-ease: 0.4s ease-in-out;

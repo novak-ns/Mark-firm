@@ -1,0 +1,26 @@
+html {
+  scroll-behavior: smooth;
+}
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+@include lg-1199 {
+  .container {
+    max-width: 971px;
+  }
+}
+
+@include md-991 {
+  .container {
+    max-width: 747px;
+  }
+}
+
+@include sm-767 {
+  .container {
+    max-width: 550px;
+  }
+}

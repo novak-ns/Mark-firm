@@ -1,0 +1,51 @@
+.overlapping-img {
+  position: relative;
+  top: -70px;
+  .container {
+    border-radius: 5px;
+    background-color: $third-color;
+    .overlapping-img-top {
+      display: flex;
+      flex-direction: row;
+      -webkit-box-shadow: 0 0 32px rgb(10 10 10 / 8%);
+      box-shadow: 0 0 32px rgb(10 10 10 / 8%);
+      .overlapping-img-top-left {
+        width: 50%;
+        text-align: left;
+        .top-paragraph {
+          font-size: 34px;
+          color: $primary-color;
+          margin-bottom: 30px;
+          line-height: 38px;
+          font-family: $font-fourth;
+          padding: 66px;
+          padding-bottom: 0;
+          font-weight: 300;
+          span {
+            color: $secondary-color;
+          }
+        }
+        p {
+          color: $fourth-color;
+          font-family: $font-second;
+          line-height: 26px;
+          padding: 66px;
+          padding-top: 0;
+        }
+      }
+      .overlapping-img-top-right {
+        position: relative;
+        width: 50%;
+        img {
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+          position: absolute;
+          object-fit: cover;
+          object-position: center center;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

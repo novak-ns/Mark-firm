@@ -1,0 +1,138 @@
+.site-header {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  z-index: 2000;
+  background: rgb(30, 30, 30, .6);
+  transition: $transition-ease;
+  .container {
+    max-width: 1863px;
+    display: flex;
+    flex-direction: column;
+    .site-header-top {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      height: 60px;
+      align-items: center;
+      font-family: $font-second;
+      font-size: 14px;
+      transition: $transition-ease;
+      .contact-info {
+        display: flex;
+        flex-direction: row;
+        transition: $transition-ease;
+        width: 100%;
+        li {
+          margin-right: 20px;
+          a {
+            font-family: $font-second;
+            color: $third-color;
+            transition: $transition-ease;
+            i {
+              margin-right: 10px;
+              color: $primary-color;
+            }
+          }
+          a:hover {
+            color: $primary-color;
+          }
+        }
+        .third-li {
+          display: flex;
+          flex-direction: row;
+          margin-right: 0;
+          i {
+            margin-right: 10px;
+            color: $primary-color;
+          }
+          p {
+            color: $third-color;
+          }
+        }
+        .last-li {
+          margin-left: auto;
+          transition: $transition-ease;
+          .social-icons {
+            display: flex;
+            flex-direction: row;
+            transition: $transition-ease;
+            width: 100%;
+            li {
+              margin-right: 20px;
+              a {
+                cursor: pointer;
+                i {
+                  justify-content: center;
+                  margin-left: auto;
+                  margin-right: auto;
+                  transition: $transition-ease;
+                  color: $third-color;
+                }
+                i:hover {
+                  color: $primary-color;
+                }
+              }
+            }
+            li:last-of-type {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+    .site-header-bottom {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      height: 60px;
+      align-items: center;
+      transition: $transition-ease;
+      .hamburger {
+        display: none;
+      }
+      .logo {
+        a {
+          img {
+            height: 40px;
+          }
+        }
+      }
+      .nav {
+        display: flex;
+        flex-direction: row;
+        li {
+          margin-right: 40px;
+          a {
+            font-family: $font-second;
+            color: $third-color;
+            transition: $transition-ease;
+          }
+          a:hover {
+            color: $primary-color;
+          }
+        }
+        li:last-of-type {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+.active_site-header {
+  background-color: $secondary-color;
+  box-shadow: 4px 4px 10px rgba(155, 123, 48, .5);
+  .container {
+    .site-header-top {
+      height: 0;
+      border-bottom: transparent;
+      transition: $transition-ease;
+      .contact-info {
+        opacity: 0;
+      }
+      .social-icons {
+        opacity: 0;
+      }
+    }
+  }
+}

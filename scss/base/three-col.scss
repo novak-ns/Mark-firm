@@ -1,0 +1,39 @@
+.three-col {
+  margin-top: 20px;
+  margin-bottom: 90px;
+  .container {
+    .overlapping-img-bottom {
+      .overlapping-img-bottom-items {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .overlapping-img-bottom-item {
+          width: 33%;
+          display: flex;
+          flex-direction: row;
+          margin-right: 20px;
+          .overlapping-img-bottom-icon {
+            margin-right: 20px;
+          }
+          .overlapping-img-bottom-text {
+            h3 {
+              margin-bottom: 20px;
+              font-size: 27px;
+              font-family: $font-fourth;
+              line-height: 36px;
+              font-weight: 300;
+            }
+            p {
+              font-family: $font-second;
+              color: $fourth-color;
+              line-height: 26px;
+            }
+          }
+        }
+        .overlapping-img-bottom-item:last-of-type {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

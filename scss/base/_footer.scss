@@ -1,0 +1,136 @@
+.site-footer {
+  background: rgb(12, 12, 12);
+  .container {
+    padding-top: 70px;
+    .site-footer-top {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .site-footer-top-partial {
+        ul {
+          li {
+            font-size: 14px;
+            color: $fourth-color;
+            font-family: $font-second;
+            margin-bottom: 15px;
+            i {
+              margin-right: 10px;
+            }
+            a {
+              color: $fourth-color;
+              transition: $transition-ease;
+            }
+            a:hover {
+              color: $primary-color;
+            }
+          }
+          li:last-of-type {
+            display: inline-flex;
+            i {
+              margin-right: 11px;
+            }
+          }
+        }
+      }
+    }
+    .site-footer-bottom {
+      margin-top: 70px;
+      margin-bottom: 60px;
+      display: flex;
+      flex-direction: row;
+      .site-footer-bottom-partial {
+        width: 50%;
+        align-items: center;
+        text-align: center;
+        margin-right: 15px;
+        padding: 36px 28px;
+        background-color: $secondary-color;
+        display: flex;
+        flex-direction: row;
+        .site-footer-bottom-partial-text {
+          text-align: left;
+          h5 {
+            font-size: 20px;
+            color: $third-color;
+            font-family: $font-fourth;
+            font-weight: 400;
+          }
+          p {
+            margin-top: 20px;
+            font-size: 16px;
+            line-height: 26px;
+            color: $fourth-color;
+            font-family: $font-second;
+          }
+        }
+        .main-button {
+          margin-left: 20px;
+          font-size: 14px;
+          font-weight: 400;
+          color: $third-color;
+          background: rgb(12, 12, 12);
+          white-space: nowrap;
+        }
+        .main-button:hover {
+          background-color: $third-color;
+          color: $primary-color;
+        }
+      }
+      .site-footer-bottom-partial:last-of-type {
+        margin-right: 0;
+        margin-left: 15px;
+      }
+    }
+    .copyright {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      border-top: 1px solid $third-color;
+      font-size: 15px;
+      p {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-family: $font-second;
+        color: $fourth-color;
+        a {
+          color: $primary-color;
+          transition: $transition-ease;
+        }
+        a:hover {
+          color: $third-color;
+        }
+      }
+      .three-social-icons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        li {
+          width: 33px;
+          height: 33px;
+          border-radius: 5px;
+          transition: $transition-ease;
+          margin-right: 15px;
+          i {
+              color: $fourth-color;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 100%;
+              width: 100%;
+              transition: $transition-ease;
+              cursor: pointer;
+          }
+        }
+        li:last-of-type {
+          margin-right: 0;
+        }
+        li:hover {
+          background-color: $primary-color;
+          i {
+            color: $third-color;
+          }
+        }
+      }
+    }
+  }
+}
